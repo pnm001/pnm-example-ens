@@ -30,6 +30,7 @@ contract FuzzENSExpiry is FuzzENS {
         uint256 parentExpiry = expiry(subId);
         uint256 childExpiry = expiry(subSubId);
 
+
         // INVARIANT
         require(
             parentExpiry >= childExpiry,
