@@ -28,7 +28,6 @@ contract FuzzENSExpiry is FuzzENS {
         uint256 childExpiry = expiry(subSubId);
 
         // INVARIANT
-        /*
         require(
             parentExpiry >= childExpiry,
             string(
@@ -41,6 +40,5 @@ contract FuzzENSExpiry is FuzzENS {
                 )
             )
         );
-        */
     }
 }
