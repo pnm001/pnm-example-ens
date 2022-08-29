@@ -8,7 +8,7 @@ import "contracts/wrapper/NameWrapper.sol";
 import "contracts/wrapper/StaticMetadataService.sol";
 import "@pwnednomore/contracts/Agent.sol";
 
-contract FuzzENS is Agent {
+contract TestDomain is Agent {
     ENSRegistry internal ens;
     BaseRegistrarImplementation internal baseRegistrar;
     StaticMetadataService internal metaDataService;
