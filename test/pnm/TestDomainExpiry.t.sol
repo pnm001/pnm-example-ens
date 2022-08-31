@@ -30,7 +30,6 @@ contract TestDomainExpiry is TestDomain {
         uint256 parentExpiry = expiry(subId);
         uint256 childExpiry = expiry(subSubId);
 
-
         // INVARIANT
         require(
             parentExpiry >= childExpiry,
