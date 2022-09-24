@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "./TestNameWrapper.t.sol";
+import "./NameWrapperTest.t.sol";
 
-contract TestExpiry is TestNameWrapper {
+contract ExpiryTest is NameWrapperTest {
     bytes32 pnmId;
     bytes32 subId;
     bytes32 subSubId;
@@ -22,7 +22,9 @@ contract TestExpiry is TestNameWrapper {
         subSubId = registerSubNode(subId, "subsub");
     }
 
-    function check() public override {
+    function invariantExpiryOrder() public {
+        // INVARIANT:
+        // A parent domain always expires later than a child domain
         require(
             expiry(subId) >= expiry(subSubId),
             "Sub domain expires later than its parent."

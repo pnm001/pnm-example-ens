@@ -1237,10 +1237,10 @@
     web3 "^1.2.5"
     web3-utils "^1.2.5"
 
-"@pwnednomore/contracts@1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@pwnednomore/contracts/-/contracts-1.0.8.tgz#8d8c4ad5a3debbb125ed7c19d6dea027be3a2023"
-  integrity sha512-mmLqsxITB03TYYsDM3Fi2mJNiN+qJ0W6+9wThSq1jOn65t2h9UebC+R0fcXfO22p6DTwFwx27m0erX7zYhCDPg==
+"@pwnednomore/contracts@^1.0.13":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@pwnednomore/contracts/-/contracts-1.0.13.tgz#316a19710afaa91bd6f8762700e8e441ad1b1d09"
+  integrity sha512-qUXQKbU+/0zhBKz9JQKokZRfZo5SepYrfmGerHUYNFf/mnqBQO7R9R+ePNiZJAkPQjBJtC5ACvqxGOHU+q3X8A==
 
 "@resolver-engine/core@^0.3.3":
   version "0.3.3"
